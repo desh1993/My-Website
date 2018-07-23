@@ -1,0 +1,841 @@
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+body {
+    line-height: 1;
+    font-family: "Montserrat" , sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+img{
+max-width: 100%;
+
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-40{
+margin-bottom: :40px;
+
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/*HELPER CLASS END*/
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 0;
+}
+
+
+.wrapper{
+max-width: 800px;
+width: 100%;
+margin: 0 auto;
+}
+
+h1{
+  font-family: "Oswald",sans-serif;
+  font-size:35px;
+  color: red;
+}
+
+/*Navigation bar +Header style starts
+*/
+
+header{
+background: transparent;
+width: 100%;
+position: relative;
+z-index: 5;
+}
+
+header.sticky {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  background:rgba(0,0,0,0.85);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body.scroll header.sticky{
+-webkit-transform: translateY(0);
+        transform: translateY(0);
+
+
+
+}
+.nav-wrapper{
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  padding:7px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack:distribute;
+      justify-content:space-around;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+}
+
+nav.nav-wrapper ul li{
+display: inline-block;
+padding: 0 10px;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+margin-bottom: 0 px;
+}
+
+nav.nav-wrapper ul li a {
+  font-size: 17px;
+  line-height:22px;
+  text-decoration:none;
+  color: white;
+  cursor:pointer;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav.nav-wrapper ul li a:hover{
+  border-bottom: 1px solid #ffffff;
+}
+
+header img.logo  {
+  max-width: 100px;
+
+}
+/* Parralax page style starts */
+section.cover-main{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0,0.3)), to(rgba(255, 0, 0, 0.2))) , url("../images/jjf-background.jpg") right bottom;
+  background: linear-gradient(rgba(0, 0, 0,0.3), rgba(255, 0, 0, 0.2)) , url("../images/jjf-background.jpg") right bottom;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+ul#scene li.name{
+text-align: center;
+font-size: 40px;
+line-height: 45px;
+text-transform: uppercase;
+color: white;
+width: 100%;
+}
+
+ul#scene li.title{
+text-align: center;
+font-size: 30px;
+line-height: 35px;
+color: white;
+width: 100%;
+margin-top: 60px;
+}
+
+ul#scene{
+  margin-top: 100px;
+}
+
+
+li.btn{
+width: 100%;
+text-align: center;
+margin-top: 150px;
+padding: 15px 32px;
+border-bottom-color: rgb(255,255,255);
+border-bottom-style: solid;
+border-bottom-width: 1px;
+}
+
+.portfolio-btn, .contact-btn {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: transparent;
+  color:white;
+  text-decoration: none;
+
+
+}
+
+.portfolio-btn:hover,
+.contact-btn:hover {
+background: white;
+color: black;
+-webkit-transition: 0.3s;
+transition: 0.3s;
+
+}
+
+
+.portfolio-btn {
+
+  margin-right: 30px;
+
+}
+
+.contact-btn{
+
+  margin-left: 30px;
+}
+/*masonry styling starts*/
+.masonry-grid{
+
+  position: relative;
+
+}
+
+.grid{
+margin:0 auto;
+
+}
+
+.grid-items{
+
+  width: 450px;
+}
+
+tall-img{
+
+  height: 680px;
+}
+
+h2.sub-title{
+position: relative;
+display: block;
+margin: 70px auto;
+text-align: center;
+font-size: 35px;
+line-height: 40px;
+
+}
+
+h2.sub-title:after{
+
+  display: block;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+  width: 300px;
+  margin: 30px auto 0 auto;
+
+
+}
+/*HEART animation*/
+
+section.beating-heart{
+ background: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.6))),url("../images/JJF-3.jpg"),right bottom / cover;
+ background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/JJF-3.jpg"),right bottom / cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: relative;
+  text-align: center;
+  max-width: 100%;
+  padding:50px 10px;
+  color:white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+
+}
+
+section.beating-heart h2{
+  margin-bottom: 30px;
+
+}
+
+.heart{
+  fill: red;
+  position: relative;
+  width:150px;
+  margin:0 50px;
+  -webkit-animation: pulse 1s infinite;
+          animation: pulse 1s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    15%{
+      -webkit-transform: scale(1.25);
+              transform: scale(1.25);
+    }
+
+      25%{
+        -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+      }
+        35%{
+          -webkit-transform: scale(1.25);
+                  transform: scale(1.25);
+        }
+
+          100%{
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+          }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    15%{
+      -webkit-transform: scale(1.25);
+              transform: scale(1.25);
+    }
+
+      25%{
+        -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+      }
+        35%{
+          -webkit-transform: scale(1.25);
+                  transform: scale(1.25);
+        }
+
+          100%{
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+          }
+}
+
+section.betting-heart h2{
+  margin-bottom: 30px;
+
+}
+
+
+h2.sub-title:after{
+
+  background: white;
+}
+
+section.beating-heart span{
+  font-size: 100px;
+  line-height: 150px;
+
+}
+/*video*/
+section.video{
+  background: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.6))),url("../images/seven.jpg"),right bottom / cover;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/seven.jpg"),right bottom / cover;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   height: relative;
+   text-align: center;
+   max-width: 100%;
+   padding:50px 10px;
+   color:white;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -ms-flex-item-align: center;
+       align-self: center;
+
+}
+
+iframe.sub-vid{
+
+  position: relative;
+}
+/*video ends*/
+
+/*Slider starts*/
+
+
+
+div.slider-div{
+
+
+}
+
+div.slider{
+ padding:  20px;
+ margin: 20px auto;
+ text-align: center;
+ color: white;
+}
+
+div.slide{
+max-height: 50vh;
+padding: 15px;
+max-width: 50vw;
+
+}
+
+.slider-div h2.sub-title{
+  margin-bottom: 0;
+}
+
+.slick-prev,.slick-next{
+z-index: 1;
+background: black;
+width :40px;
+height: 40px;
+
+}
+
+/* how to make the arrows or anything start from beginning*/
+.slick-prev{
+  left: 0;
+}
+
+.slick-next{
+  right: 0;
+}
+
+/* how to fix when we want to hover something*/
+.slick-prev:hover,
+.slick-next:hover{
+background: red;
+}
+/* slider showcase styling ends*/
+/*footer starts*/
+
+footer {
+  position: relative;
+  z-index: -2;
+  background: black;
+  text-align: center;
+  height: 150px;
+}
+
+h1.footer {
+  position: fixed;
+  font-size: 30px;
+  line-height: 35px;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 800px;
+  z-index: 1;
+}
+
+/* responsive  menu css*/
+@media only screen and (max-width:768px) {
+    .menu-trigger{
+          background:url('../images/hamburger-icon.svg') no-repeat center/cover;
+          width: 35px;
+          height: 35px;
+          display: block;
+          z-index: 10;
+          position: absolute;
+          right:20px;
+          top:15px;
+
+    }
+
+    .main-overlay{
+      position:fixed;
+      top:0;
+      bottom:0;
+      right:0;
+      left:0;
+      background:rgba(0,0,0,0.72);
+      z-index: 6;
+      display: none;
+
+    }
+
+    .main-overlay::after{
+      background: url('../images/close-icon.svg') no-repeat center /cover;
+      width:35px;
+      height:35px;
+      display:block;
+      content:"";
+      position: fixed;
+      right:10px;
+      top:10px;
+      z-index:20;
+    }
+
+    .menu{
+      position:fixed;
+      top:0;
+      bottom:0;
+      left:0;
+      background: #131313;
+      width: 100%;
+      max-width:300px;
+      z-index:30;
+      -webkit-transform: translate3d(-100%,0,0);
+              transform: translate3d(-100%,0,0);
+    }
+
+    nav.nav-wrapper ul li{
+        display: block;
+        margin : 20px;
+        padding: 0;
+        padding-bottom:20px;
+
+    }
+
+    nav.nav-wrapper ul li a{
+        font-size:18px;
+        line-height: 23px;
+    }
+
+    nav.nav-wrapper ul li a:hover{
+        border-color: transparent;
+    }
+
+  body .menu-is-active .menu{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    display: block;
+    padding: 0 15;
+  }
+  body.menu-is-active .main-overlay {
+       display: block;
+     }
+
+     body.menu-is-active .menu-trigger {
+       display: none;
+     }
+}
+/* responsive  menu css ends */
+/* Membership css */
+
+
+
+h2.pricing{
+position: relative;
+display: block;
+margin: 70px auto;
+text-align: center;
+font-size: 35px;
+line-height: 40px;
+
+}
+
+h2.pricing:after{
+
+  display: block;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+  width: 300px;
+  margin: 30px auto 0 auto;
+
+
+}
+
+.col{
+     float:left;
+     width:33.3%;
+     padding: 8px;
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+
+}
+
+.price-box{
+  background: #fff;
+  color: #555;
+  list-style-type: none;
+  border: 1px solid #555;
+  margin: 0;
+  padding:0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.price-box:hover, .price-box.best{
+  -webkit-box-shadow: 0 10px 15px 0 #000;
+          box-shadow: 0 10px 15px 0 #000;
+
+}
+
+.price-box .header{
+  background-color: #111;
+  color: #fff;
+  font-size: 25;
+
+}
+
+.price-box li {
+  padding : 20px;
+  border-bottom:  1px solid #eee;
+  text-align: center;
+}
+
+.price .emph{
+  background-color: #f4f4f4;
+  font-size: 20px;
+}
+@media only screen and (max-width:560px){
+  ul #scene li .name{
+    font-size: 22px;
+    line-height: 27px;
+  }
+  ul #scene li.title{
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 50px;
+  }
+  .btn{
+    margin-bottom: 50px;
+  }
+
+  div.grid{
+    width: initial !important;
+  }
+
+  ul#scene{
+    margin-top: 50px;
+  }
+
+  .portfolio-btn,
+  .contact-btn{
+    display: block;
+    margin: 20px auto;
+    font-size: 15px;
+    line-height: 20px;
+    width: 120px;
+
+  }
+
+  .grid-items{
+    height: initial;
+  }
+  .tall-img{
+    height: initial;
+  }
+  .menu{
+    width: 200px;
+  }
+  h2.sub-title{
+    margin: 30px auto;
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+  section.beating-heart{
+    height: initial;
+  }
+
+  footer{
+    height: 100px;
+  }
+
+  footer.h1{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+}
